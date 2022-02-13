@@ -59,7 +59,7 @@ listen_port=990
 
 To use "FTP", you will need to install the [Graphical_Interface](https://github.com/JoseCarvalho1026/Graphical_Interface) e onde diz `sudo apt install -y xrdp chromium-browser` adiciona na frente `filezilla` .
 
-In addition to the "Graphical Interface" you will need to install "netfilter-persistant" and "iptables-persistan":
+In addition to the "Graphical Interface" you will need to install "netfilter-persistant" and "iptables-persistan" because of "ports":
 
 ◻️ `apt install netfilter-persistant iptables-persistant` ;
 
