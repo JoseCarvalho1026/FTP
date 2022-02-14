@@ -57,7 +57,7 @@ listen_port=990
 
 ◻️ `systemctl status vsftpd` .
 
-To use "FTP", you will need to install the [Graphical_Interface](https://github.com/JoseCarvalho1026/Graphical_Interface) e onde diz `sudo apt install -y xrdp chromium-browser` adiciona na frente `filezilla` .
+To use "FTP", you will need to install the [Graphical_Interface](https://github.com/JoseCarvalho1026/Graphical_Interface) and where it says `sudo apt install -y xrdp chromium-browser` you will need to add at the end `filezilla` .
 
 In addition to the "Graphical Interface" you will need to install "netfilter-persistant" and "iptables-persistan" because of "ports":
 
