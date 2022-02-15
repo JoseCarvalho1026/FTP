@@ -39,3 +39,7 @@ Comment this 4 following lines:
 #</IfDefine>
 ```
 ◻️ `systemctl enable --now proftpd` ;
+
+To use "FTP", you will need to install [Graphical_Interface](https://github.com/JoseCarvalho1026/Graphical_Interface) on "remote.client.pt" and where it says `sudo apt install -y xrdp chromium-browser` you will need add `filezilla` at the end.
+
+In addition to the "Graphical Interface", you will need to add the necessary ports in [iptables](https://github.com/JoseCarvalho1026/Iptables/blob/main/Ec2-user.md) for "FTP" to work correctly, so you must go to "control.enta.pt" and add the commands for "FTP"; 
