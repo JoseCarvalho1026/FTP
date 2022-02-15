@@ -5,6 +5,7 @@
 ◻️ `systemctl status vsftpd` ;
 
 ◻️ `nano /etc/vsftpd.conf` ;
+
 Certificates:
 ```
 Uncomment "write_enable=YES"
