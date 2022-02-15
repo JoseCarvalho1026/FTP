@@ -1,4 +1,5 @@
 # FTP
+### In "www.inova.pt"
 ◻️ `apt install vsftpd` ;
 
 ◻️ `systemctl status vsftpd` ;
@@ -57,34 +58,6 @@ listen_port=990
 
 ◻️ `systemctl status vsftpd` .
 
-To use "FTP", you will need to install the [Graphical_Interface](https://github.com/JoseCarvalho1026/Graphical_Interface) and where it says `sudo apt install -y xrdp chromium-browser` you will need to add at the end `filezilla` .
+To use "FTP", you will need to install [Graphical_Interface](https://github.com/JoseCarvalho1026/Graphical_Interface) on "remote.client.pt" and where it says `sudo apt install -y xrdp chromium-browser` you will need add `filezilla` at the end.
 
-In addition to the "Graphical Interface" you will need to install "netfilter-persistant" and "iptables-persistan" because of "ports":
-
-◻️ `apt install netfilter-persistant iptables-persistant` ;
-
-◻️ `iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE` ;
-
-◻️ `iptables -t nat -A PREROUTING -i eth0 -p tcp -m tcp --dport 20
--j DNAT --to-destination PRIVATE_IP` ;
-
-◻️ `iptables -t nat -A PREROUTING -i eth0 -p tcp -m tcp --dport 21
--j DNAT --to-destination PRIVATE_IP` ;
-
-◻️ `iptables -t nat -A PREROUTING -i eth0 -p tcp -m tcp --dport 10000:10100
--j DNAT --to-destination PRIVATE_IP` ;
-
-◻️ `iptables -t nat -A PREROUTING -i eth0 -p tcp -m tcp --dport 990
--j DNAT --to-destination PRIVATE_IP` ;
-
-◻️ `iptables -t nat -L -nv` ;
-
-◻️ `netfilter-persistant save` ;
-
-◻️ `nano /etc/sysctl.conf` ;
-
-Uncomment:
-```
-net.ipv4.ip_forward=1
-```
-◻️ `sysctl -p` (confirm) .
+In addition to the "Graphical Interface", you will need to add the necessary ports in [iptables](https://github.com/JoseCarvalho1026/Iptables/blob/main/Ubuntu.md) for "FTP" to work correctly, so you must go to "control.inova.pt" and add the commands for "FTP"; 
